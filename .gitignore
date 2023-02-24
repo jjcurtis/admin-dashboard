@@ -4,5 +4,6 @@
 *.scss.map
 *.scss
 *.json
-.gitignore
+*.gitignore
 /node_modules
+/images
