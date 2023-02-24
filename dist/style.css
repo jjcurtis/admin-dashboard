@@ -3,10 +3,26 @@ div[class*=profile] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  border: 1px solid slategray;
+  width: 15px;
+  height: 15px;
   border-radius: 50px;
-  background: rgb(81, 255, 0);
+}
+
+.bird-profile {
+  background: linear-gradient(red, pink);
+}
+
+.owl-profile {
+  background: linear-gradient(rgb(94, 255, 0), rgb(0, 174, 255));
+}
+
+.trucker-profile {
+  background: linear-gradient(rgb(255, 174, 0), rgb(255, 0, 191));
+}
+
+.hippo-profile {
+  background: linear-gradient(rgb(0, 26, 255), rgb(255, 230, 0));
 }
 
 /*# sourceMappingURL=style.css.map */
