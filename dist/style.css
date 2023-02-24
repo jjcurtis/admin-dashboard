@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  font-family: "Arial";
+  font-size: 12px;
 }
 
 body,
@@ -37,6 +39,39 @@ footer {
   background: rgb(14, 126, 255);
   grid-area: dashboard;
   color: antiquewhite;
+  font-weight: 800;
+}
+.dashboard div {
+  width: fit-content;
+}
+.dashboard a {
+  display: flex;
+  gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.dashboard ul {
+  padding: 1rem;
+  list-style: none;
+}
+.dashboard li {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+.dashboard h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.dashboard h3 img {
+  padding-right: 0.4rem;
+}
+.dashboard img {
+  display: flex;
+  align-items: center;
 }
 
 div[class*=profile] {
