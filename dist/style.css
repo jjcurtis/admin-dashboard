@@ -36,7 +36,7 @@ footer {
 }
 
 .dashboard {
-  background: rgb(14, 126, 255);
+  background: linear-gradient(rgb(14, 126, 255), rgb(0, 36, 56));
   grid-area: dashboard;
   color: antiquewhite;
   font-weight: 800;
@@ -74,9 +74,86 @@ footer {
   align-items: center;
 }
 
-div[class*=profile] {
-  padding: 1.5rem;
+.main {
+  grid-area: main;
+  background: rgb(232, 232, 255);
+}
+.main nav {
+  background: white;
+  padding: 0 2rem;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "top" "bottom";
+  box-shadow: 0px 3px 3px rgb(189, 208, 230);
+}
+.main #search-bar {
+  width: 35vw;
+  background: rgb(232, 232, 255);
+  border: none;
+  border-radius: 20px;
+}
+.main .top {
+  grid-area: top;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .top .search {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.main .top .account {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem;
+}
+.main .top .account .owl-profile {
+  display: flex;
+  justify-content: center;
+}
+.main .top h3 {
+  margin: 0;
+}
+.main .bottom {
+  grid-area: bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.main .bottom .greeting-display {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.main .bottom .greeting-display :nth-child(2) > * {
+  margin: 0;
+}
+.main .bottom .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  column-gap: 1rem;
+}
+.main .bottom .buttons > * {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 60px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background: linear-gradient(rgb(14, 126, 255), rgb(0, 36, 56));
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+div[class*=profile] {
+  padding: 1.3rem;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(46, 53, 59);
