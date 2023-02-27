@@ -74,11 +74,11 @@ footer {
   align-items: center;
 }
 
-.main {
+main {
   grid-area: main;
   background: rgb(232, 232, 255);
 }
-.main nav {
+main nav {
   background: white;
   padding: 0 2rem;
   display: grid;
@@ -88,58 +88,58 @@ footer {
   grid-template-areas: "top" "bottom";
   box-shadow: 0px 3px 3px rgb(189, 208, 230);
 }
-.main #search-bar {
+main #search-bar {
   width: 35vw;
   background: rgb(232, 232, 255);
   border: none;
   border-radius: 20px;
 }
-.main .top {
+main .top {
   grid-area: top;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main .top .search {
+main .top .search {
   display: flex;
   column-gap: 1rem;
   align-items: center;
 }
-.main .top .account {
+main .top .account {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   column-gap: 2rem;
 }
-.main .top .account .owl-profile {
+main .top .account .owl-profile {
   display: flex;
   justify-content: center;
 }
-.main .top h3 {
+main .top h3 {
   margin: 0;
 }
-.main .bottom {
+main .bottom {
   grid-area: bottom;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1rem;
 }
-.main .bottom .greeting-display {
+main .bottom .greeting-display {
   display: flex;
   column-gap: 1rem;
   align-items: center;
 }
-.main .bottom .greeting-display :nth-child(2) > * {
+main .bottom .greeting-display :nth-child(2) > * {
   margin: 0;
 }
-.main .bottom .buttons {
+main .bottom .buttons {
   display: flex;
   justify-content: center;
   align-items: end;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
 }
-.main .bottom .buttons > * {
+main .bottom .buttons > * {
   display: flex;
   justify-content: center;
   color: white;
@@ -149,6 +149,72 @@ footer {
   background: linear-gradient(rgb(14, 126, 255), rgb(0, 36, 56));
   border-radius: 20px;
   padding: 5px 15px;
+}
+
+.content {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 7fr 9fr 1fr;
+  grid-template-areas: "left-header announcements" "cards announcements" "cards trending" "footer footer";
+}
+
+.projects {
+  display: grid;
+  gap: 1rem;
+  grid-area: cards;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+.projects h3,
+.projects p {
+  margin: 0;
+}
+.projects p {
+  margin-top: 0.5rem;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 5px;
+  height: 100%;
+  background: linear-gradient(0.25turn, rgb(94, 255, 0), 5px, rgb(0, 174, 255), 1%, white);
+}
+.card div {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.notice {
+  grid-area: announcements;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.notice h3 {
+  margin-bottom: 10px;
+}
+.notice .card {
+  height: fit-content;
+  margin: 0;
+  background: white;
+}
+.notice .card div {
+  justify-content: space-evenly;
+  margin-bottom: 12px;
+  color: rgb(158, 137, 231);
+}
+.notice .card p {
+  margin: 6px 0px -6px;
+}
+.notice .card h3 {
+  margin: 0;
+}
+
+.trending {
+  grid-area: trending;
+  padding: 0 1rem;
 }
 
 div[class*=profile] {
